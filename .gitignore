@@ -12,3 +12,6 @@ bin/
 # OS固有のキャッシュ
 .DS_Store
 Thumbs.db
+
+# データベース設定ファイルの除外
+**/db.properties
