@@ -1,0 +1,14 @@
+# ビルド成果物
+build/
+target/
+bin/
+
+# Eclipse固有の設定（チーム開発時の競合防止）
+.metadata/
+.settings/
+.project
+.classpath
+
+# OS固有のキャッシュ
+.DS_Store
+Thumbs.db
