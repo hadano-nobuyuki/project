@@ -20,6 +20,25 @@
 
 ---
 
+---
+
+## 🛠️ ローカル環境での実行・セットアップ手順
+
+ローカル環境で本プロジェクトを実行する場合は、データベース接続設定が必要です。  
+セキュリティ保護のため設定ファイル自体はリポジトリ管理外となっていますので、以下の手順で作成してください。
+
+### 1. データベース設定ファイルの作成
+`/src/main/java/` 配下に `db.properties` を作成し、ご自身のローカルDB環境に合わせて接続情報を設定してください。
+
+> **リポジトリ内に `db.properties.sample` を用意していますので、リネームしてご利用いただけます。**
+
+#### `db.properties` の記述例
+```properties
+db.url=jdbc:postgresql://localhost:5432/データベース名
+db.user=ユーザ名
+db.password=パスワード
+db.driver=org.postgresql.Driver
+
 ## 📖 要件定義書
 👉 **[Web版 要件定義書・画面設計書はこちら（GitHub Pages）](https://hadano-nobuyuki.github.io/project/)**  
 *(※リンクを別タブで開く場合は `Ctrl + クリック`（Macは `Cmd + クリック`）してください)*  
