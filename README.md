@@ -38,6 +38,7 @@ db.url=jdbc:postgresql://localhost:5432/データベース名
 db.user=ユーザ名
 db.password=パスワード
 db.driver=org.postgresql.Driver
+```
 
 ## 📖 要件定義書
 👉 **[Web版 要件定義書・画面設計書はこちら（GitHub Pages）](https://hadano-nobuyuki.github.io/project/)**  
