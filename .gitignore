@@ -15,6 +15,3 @@ Thumbs.db
 
 # データベース設定ファイルの除外
 **/db.properties
-
-# その他
-README.md
