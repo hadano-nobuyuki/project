@@ -1,26 +1,27 @@
 package com.yakusokun.servlet;
 
-import com.yakusokun.dao.ScheduleDAO;
-import com.yakusokun.model.CalendarCell;
-import com.yakusokun.model.Schedule;
-import com.yakusokun.model.WeatherData;
-import com.yakusokun.util.WeatherUtil;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.YearMonth;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.YearMonth;
-import java.time.format.DateTimeFormatter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.yakusokun.dao.ScheduleDAO;
+import com.yakusokun.model.CalendarCell;
+import com.yakusokun.model.Schedule;
+import com.yakusokun.model.WeatherData;
+import com.yakusokun.util.WeatherUtil;
 
 @WebServlet("/home")
 public class HomeServlet extends HttpServlet {
@@ -89,7 +90,7 @@ public class HomeServlet extends HttpServlet {
         Map<String, List<Schedule>> scheduleMapByDate = new HashMap<>();
         for (Schedule s : monthSchedules) {
             String dateKey = s.getDayTime().toString();
-            scheduleMapByDate.computeIfAbsent(dateKey, k -> new ArrayList<>()).add(s);
+            scheduleMapByDate.computeIfAbsent(dateKey, _ -> new ArrayList<>()).add(s);
         }
 
         List<CalendarCell> cells = new ArrayList<>();
