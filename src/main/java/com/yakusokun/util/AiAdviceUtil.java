@@ -54,14 +54,14 @@ public class AiAdviceUtil {
     }
 
     private static String callGeminiApi(String apiKey, int targetExpense, int totalExpense, int remainingExpense, double achievementRate, Map<String, Integer> categoryExpenses) throws Exception {
-        String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=" + apiKey;
+        String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=" + apiKey;
         URL url = URI.create(endpoint).toURL();
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("POST");
         conn.setRequestProperty("Content-Type", "application/json; utf-8");
         conn.setDoOutput(true);
-        conn.setConnectTimeout(5000);
-        conn.setReadTimeout(5000);
+        conn.setConnectTimeout(50000);
+        conn.setReadTimeout(50000);
 
         StringBuilder prompt = new StringBuilder();
         prompt.append("あなたは親切な家計アドバイザーです。以下の支出状況に基づいて、短く前向きなアドバイスを日本語2〜3文で出力してください。\\n");
