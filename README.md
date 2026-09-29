@@ -14,6 +14,9 @@
 
 > [!NOTE]  
 > **本プロジェクトは、Java実習時に作成したコンテンツ（ポートフォリオ）です。**  
+> * **開発期間**: 26日  (要件定義、PD、PG)
+> * **開発規模**: 2.5Kstep  
+> 
 > Java実習の内容は以下よりご覧いただけます。  
 > 👉 **[Java実習の内容はこちら](https://github.com/hadano-nobuyuki/ai-programming-training-portfolio)**  
 > *(※別タブで開く場合は Ctrl + クリック / Cmd + クリック 推奨)*
@@ -65,6 +68,8 @@
 
 | カテゴリ | 技術スタック / バージョン |
 | :--- | :--- |
+| **開発期間** | 26日 |
+| **開発規模** | 2.5Kstep |
 | **言語・ランタイム** | Java 25 (OpenJDK) |
 | **Webコンテナ / APサーバ** | Apache Tomcat 11 |
 | **バックエンドフレームワーク** | Java (Servlet / JSP) |
