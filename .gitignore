@@ -19,3 +19,6 @@ Thumbs.db
 
 # データベース設定ファイルの除外
 **/db.properties
+
+# Windows
+desktop.ini
