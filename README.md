@@ -108,7 +108,7 @@ AWS上にデプロイしており、実際に動作をご確認いただけま�
 
 ## 📖 要件定義書・画面設計書
 
-👉 **[Web版 要件定義書・画面設計書はこちら（GitHub Pages）](https://hadano-nobuyuki.github.io/project/)**  
+👉 **[Web版 要件定義書・画面設計書はこちら（GitHub Pages）](https://hadano-nobuyuki.github/project/index.html)**  
 *(※リンクを別タブで開く場合は `Ctrl + クリック`（Macは `Cmd + クリック`）してください)*  
 *(※システム仕様・各画面イメージ・業務フローの詳細をWebページ形式でご覧いただけます)*
 
